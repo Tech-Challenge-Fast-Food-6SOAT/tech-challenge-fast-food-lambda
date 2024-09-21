@@ -1,0 +1,11 @@
+{
+  "name": "fast_food_authorizer",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.mjs",
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "3.651.1"
+  },
+  "author": "Danilo Cassola"
+}
