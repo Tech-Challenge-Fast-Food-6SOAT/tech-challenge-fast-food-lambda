@@ -26,9 +26,13 @@ export const handler = async (event) => {
   console.info("EMAIL:", email)
   console.info("CPF:", rawcpf)
 
-  if (!authentication === "true" || !rawcpf ) return authResponse;
+  const hasAuthentication = authentication === "true"
+
+  if (!hasAuthentication || !rawcpf ) return authResponse;
 
   const cpf = rawcpf.replace(/\D/g, '');
+  if (cpf.length !== 11) return authResponse;
+
   const user = await getUser(cpf);
   console.info("USER:", user);
   
