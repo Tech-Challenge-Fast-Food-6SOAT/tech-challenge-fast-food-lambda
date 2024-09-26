@@ -11,8 +11,7 @@ resource "aws_lambda_function" "fast_food_authorizer" {
   handler       = "index.handler"
 
   source_code_hash = data.archive_file.lambda.output_base64sha256
-
-  runtime = "nodejs20.x"
+  runtime          = "nodejs20.x"
 
   environment {
     variables = {
