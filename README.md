@@ -21,3 +21,13 @@ AWS_SECRET_ACCESS_KEY
 AWS_SESSION_TOKEN
 GCP_SA_KEY
 ```
+
+## Authentication
+A autenticação é feita pelo headers
+
+```bash
+authentication = true/false
+cpf (só será autenticado se existir valor)
+email (dados adicionais)
+name (dados adicionais)
+```
